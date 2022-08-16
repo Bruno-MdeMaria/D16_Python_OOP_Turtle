@@ -5,8 +5,8 @@
 # OU ASSIM:
 
 
-from turtle import Screen, Turtle
-import turtle
+#from turtle import Screen, Turtle
+#import turtle
 
 samy = Turtle()
 samy.shape("turtle")
@@ -15,3 +15,4 @@ turtle.forward(100)
 
 my_screnn = Screen()
 my_screnn.exitonclick()
+
