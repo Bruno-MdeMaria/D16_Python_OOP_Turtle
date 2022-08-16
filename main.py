@@ -6,10 +6,12 @@
 
 
 from turtle import Screen, Turtle
+import turtle
 
 samy = Turtle()
 samy.shape("turtle")
 samy.color("coral","green")
+turtle.forward(100)
 
 my_screnn = Screen()
 my_screnn.exitonclick()
