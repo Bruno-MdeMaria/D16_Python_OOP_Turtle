@@ -9,11 +9,18 @@ samy.color("dodger blue")
 #     samy.forward(100)
 #     samy.rt(90)
 
-for _ in range(10):
-    samy.forward(10)
-    samy.penup()
-    samy.forward(10)
-    samy.pendown()
+# for _ in range(10):
+#     samy.forward(10)
+#     samy.penup()
+#     samy.forward(10)
+#     samy.pendown()
+
+samy.forward(100)
+samy.rt(120)
+samy.forward(100)
+samy.rt(120)
+samy.forward(100)
+
 
 
 
