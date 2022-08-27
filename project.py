@@ -15,11 +15,37 @@ samy.color("dodger blue")
 #     samy.forward(10)
 #     samy.pendown()
 
-samy.forward(100)
-samy.rt(120)
-samy.forward(100)
-samy.rt(120)
-samy.forward(100)
+
+# for _ in range(3):
+#     samy.forward(100)
+#     samy.rt(120)
+
+# num_lados = 2
+# for _ in range(3,11):
+#     num_lados +=1
+#     angulo = 360 / num_lados
+#     for _ in range(num_lados):
+#         samy.forward(100)
+#         samy.rt(angulo)
+
+samy.penup()
+samy.sety(100)
+samy.setx(20-100)
+samy.pendown()
+def voltas(num_lados):
+    angulo = 360 / num_lados
+    for _ in range(num_lados):
+        samy.forward(100)
+        samy.rt(angulo)
+
+for range_lado in range(3,11):
+    voltas(range_lado)
+
+
+
+
+  
+
 
 
 
