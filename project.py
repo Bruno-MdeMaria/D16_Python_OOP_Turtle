@@ -32,6 +32,9 @@ samy.penup()
 samy.sety(100)
 samy.setx(20-100)
 samy.pendown()
+
+lista_cores = ["medium blue", "lime", "dark magenta", "yellow", "orange red", "rebecca purple", "dark green"]
+
 def voltas(num_lados):
     angulo = 360 / num_lados
     for _ in range(num_lados):
