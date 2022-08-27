@@ -1,4 +1,5 @@
 from turtle import Turtle, Screen
+import random
 
 samy = Turtle()
 samy.shape("turtle")
@@ -33,7 +34,7 @@ samy.sety(100)
 samy.setx(20-100)
 samy.pendown()
 
-lista_cores = ["medium blue", "lime", "dark magenta", "yellow", "orange red", "rebecca purple", "dark green"]
+lista_cores = ["medium blue", "lime", "dark magenta", "gold", "orange red", "blue violet", "dark green", "red"]
 
 def voltas(num_lados):
     angulo = 360 / num_lados
@@ -42,6 +43,7 @@ def voltas(num_lados):
         samy.rt(angulo)
 
 for range_lado in range(3,11):
+    samy.color(random.choice(lista_cores))
     voltas(range_lado)
 
 
