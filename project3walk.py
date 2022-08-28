@@ -25,7 +25,7 @@ samy.pensize(10)
 lista_direcoes = [0, 90, 180, 270]
 
 
-for _ in range(50):
+for _ in range(200):
     samy.color(random_cor())
     samy.forward(30)
     samy.setheading(random.choice(lista_direcoes))
