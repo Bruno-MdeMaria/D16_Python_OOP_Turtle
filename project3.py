@@ -12,11 +12,13 @@ samy.pendown()
 samy.pensize(10)
 
 lista_cores = ["medium blue", "lime", "dark magenta", "gold", "orange red", "blue violet", "dark green", "red"]
-lista_movimentos = [samy.forward(10), samy.rt(90)]
+lista_direcoes = [0, 90, 180, 270]
 
-for _ in range(100):
+
+for _ in range(200):
     samy.color(random.choice(lista_cores))
-    random.choice(lista_movimentos)
+    samy.forward(30)
+    samy.setheading(random.choice(lista_direcoes))
 
 
 
