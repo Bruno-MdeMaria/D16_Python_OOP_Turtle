@@ -19,7 +19,7 @@ samy.penup()
 samy.sety(100)
 samy.setx(20-100)
 samy.pendown()
-samy.pensize(10)
+samy.pensize(30)
 
 #lista_cores = ["medium blue", "lime", "dark magenta", "gold", "orange red", "blue violet", "dark green", "red"]
 lista_direcoes = [0, 90, 180, 270]
