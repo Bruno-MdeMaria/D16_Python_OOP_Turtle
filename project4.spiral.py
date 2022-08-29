@@ -22,10 +22,13 @@ def random_cor():                    #função para definir uma cor aleatória b
     random_color = (r, g, b)        #variavel recebe uma tuble
     return random_color             #a função retorna a variável.
 
-for _ in range(100):                        #um laço de 100 voltas
-    samy.color(random_cor())                #chamar a função random_cor() no método t.color()    
-    samy.circle(100)                        #o método circle com a quantidade de passos(tamanho)
-    samy.setheading(samy.heading()+5)       #é o indice de inlinação da t. o heading recebe a posição atual da inclinação e acrescenta +5.
+def desenho_espirografico(largura_do_intervalo):         #para parar precisamente é preciso de uma função
+    for _ in range(int(360 / largura_do_intervalo)):     #terá um loop de laço do tamnho de uma volta(360) / largura de uma linha a outra.
+        samy.color(random_cor())                         #chamar a função random_cor() no método t.color()    
+        samy.circle(100)                                 #o método circle com a quantidade de passos(tamanho)
+        samy.setheading(samy.heading()+5)                #é o indice de inlinação da t. o heading recebe a posição atual da inclinação e acrescenta +5.
+
+desenho_espirografico(5)   #chamar a função colocando como parametro a largura desejada entre as linhas.
 
 
 
