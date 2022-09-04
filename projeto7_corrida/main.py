@@ -2,7 +2,7 @@ from turtle import Turtle, Screen, speed
 import random
 import turtle
 
-corrida_on = False           #para a corrida não cmeçar imediantamente antes do usuario apostar
+corrida_on = False           #para a corrida não começar imediantamente antes do usuario apostar
 screen = Screen()
 screen.setup(width= 500, height= 400)    #altura e  largura do screen
 
