@@ -26,9 +26,9 @@ if aposta:
 
 while corrida_on:
     for tartaruga in lista_turtle:
-        if turtle.xcor() > 230:         # xcor é a cordernada x do screm. lembrando que tem 500 no total -250 e 250.
+        if tartaruga.xcor() > 230:         # xcor é a cordernada x do screm. lembrando que tem 500 no total -250 e 250.
             corrida_on = False
-            cor_vencedora = turtle.pencolor() #quando for maior que 230 ou seja ganhou, dederá então cor_vencedora receber a cor da tartaruga em questão.
+            cor_vencedora = tartaruga.pencolor() #quando for maior que 230 ou seja ganhou, dederá então cor_vencedora receber a cor da tartaruga em questão.
             if cor_vencedora == aposta:
                 print(f"A tartaruga {cor_vencedora} chegou primeiro. Você venceu!")
             else:
