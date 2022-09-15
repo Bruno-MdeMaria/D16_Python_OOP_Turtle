@@ -6,7 +6,7 @@ corrida_on = False           #para a corrida não começar imediantamente antes 
 screen = Screen()
 screen.setup(width= 500, height= 400)    #altura e  largura do screen
 
-
+    
 
 aposta = screen.textinput(title="Faça sua aposta", prompt="Qual a cor da tartaruga que você quer apostar? ")
 cores = ["red", "orange", "yellow", "green", "blue", "purple"]
